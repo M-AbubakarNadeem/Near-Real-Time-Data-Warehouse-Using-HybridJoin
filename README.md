@@ -16,10 +16,10 @@
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
+- [How to Run the Project](#how-to-run-the-project)
 - [Project Structure](#project-structure)
 - [How HYBRIDJOIN Is Used](#how-hybridjoin-is-used)
 - [OLAP & Analytics](#olap--analytics)
-- [How to Run the Project](#how-to-run-the-project)
 - [Author](#author)
 
 ---
@@ -118,41 +118,41 @@ This section explains **step-by-step** how to run the entire project from scratc
 
 ## Step 2: Navigate to Project Folder
 
-Navigate to the directory where the project files are located.
+- Navigate to the directory where the project files are located.
 
 Example:
 cd C:\Users\YourName\walmart-dw-project
 
 1. Install Dependencies
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 2. Create Database Schema
-Run the following SQL script in MySQL:
+- Run the following SQL script in MySQL:
 
-Create-DW.sql
+- Create-DW.sql
 
 3. Load Master Data
-Run the master data loading script:
+- Run the master data loading script:
 
-python Load-Master-Data.py
+- python Load-Master-Data.py
 
-Enter Database Credentials When Prompted
-Enter host:
+- Enter Database Credentials When Prompted
+- Enter host:
 whatever your host name is
 
-Enter database name:
+  Enter database name:
 [Press Enter]
 
-Enter username:
+- Enter username:
 username
 
-Enter password:
+- Enter password:
 [Enter your MySQL password]
 
-Enter customer CSV file path (default: customer_master_data.csv):
+- Enter customer CSV file path (default: customer_master_data.csv):
 [Press Enter]
 
-Enter product CSV file path (default: product_master_data.csv):
+- Enter product CSV file path (default: product_master_data.csv):
 [Press Enter]
 
 What This Script Does
@@ -186,17 +186,16 @@ Enter transactional data CSV file (default: transactional_data.csv):
 [Press Enter]
 
 What This Script Does
-
-•	Connects to MySQL
-•	Loads master data into memory
-•	Reads transactional data as a stream
-•	Applies the HYBRIDJOIN algorithm
-•	Enriches transactions with dimension data
-•	Loads data into fact_sales table in near real-time
+- Connects to MySQL
+- Loads master data into memory
+- Reads transactional data as a stream
+- Applies the HYBRIDJOIN algorithm
+- Enriches transactions with dimension data
+- Loads data into fact_sales table in near real-time
 
 5. Run Analytical Queries
-Execute OLAP queries for analysis:
-OLAP-Queries.sql
+- Execute OLAP queries for analysis:
+- OLAP-Queries.sql
 
 ---
 
@@ -219,8 +218,8 @@ Near-Real-Time-Data-Warehouse-Using-HybridJoin/
 ##  How HYBRIDJOIN Is Used
 HYBRIDJOIN is a stream–relation join algorithm designed for scenarios where:
 
-•	One dataset arrives continuously as a stream
-•	The other dataset is large and disk-based550
+- One dataset arrives continuously as a stream
+- The other dataset is large and disk-based550
 
 ---
 
