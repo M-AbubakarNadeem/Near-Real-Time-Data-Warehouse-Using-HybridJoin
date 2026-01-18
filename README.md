@@ -79,7 +79,7 @@ This enables **near-real-time decision-making**.
 ## Tech Stack
 
 ### Database
-= MySQL 8.0
+- MySQL 8.0
 
 ### Programming Language
 - Python 3.x
@@ -122,16 +122,19 @@ This section explains **step-by-step** how to run the entire project from scratc
 Example:
 cd C:\Users\YourName\walmart-dw-project
 
+--
 
 1. Install Dependencies
 - pip install -r requirements.txt
 
+--
 
 2. Create Database Schema
 - Run the following SQL script in MySQL:
 
 - Create-DW.sql
 
+--
 
 3. Load Master Data
 - Run the master data loading script:
@@ -157,6 +160,7 @@ username
 - Enter product CSV file path (default: product_master_data.csv):
 [Press Enter]
 
+--
 
 4. Run HYBRIDJOIN Near-Real-Time ETL
 After master data is loaded, run the HYBRIDJOIN ETL script:
@@ -179,6 +183,8 @@ username
 - Enter transactional data CSV file (default: transactional_data.csv):
 [Press Enter]
 
+--
+
 What This Script Does
 - Connects to MySQL
 - Loads master data into memory
@@ -186,6 +192,8 @@ What This Script Does
 - Applies the HYBRIDJOIN algorithm
 - Enriches transactions with dimension data
 - Loads data into fact_sales table in near real-time
+
+--
 
 5. Run Analytical Queries
 - Execute OLAP queries for analysis:
