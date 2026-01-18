@@ -17,7 +17,6 @@
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [How to Run the Project](#how-to-run-the-project)
-- [Project Structure](#project-structure)
 - [How HYBRIDJOIN Is Used](#how-hybridjoin-is-used)
 - [OLAP & Analytics](#olap--analytics)
 - [Author](#author)
@@ -103,7 +102,7 @@ This enables **near-real-time decision-making**.
 
 Clone the Repository
 git clone https://github.com/your-username/Near-Real-Time-Data-Warehouse-Using-HybridJoin.git
-cd Near-Real-Time-Data-Warehouse-Using-HybridJoin
+- cd Near-Real-Time-Data-Warehouse-Using-HybridJoin
 
 ---
 
@@ -123,13 +122,16 @@ This section explains **step-by-step** how to run the entire project from scratc
 Example:
 cd C:\Users\YourName\walmart-dw-project
 
+
 1. Install Dependencies
 - pip install -r requirements.txt
+
 
 2. Create Database Schema
 - Run the following SQL script in MySQL:
 
 - Create-DW.sql
+
 
 3. Load Master Data
 - Run the master data loading script:
@@ -154,6 +156,7 @@ username
 
 - Enter product CSV file path (default: product_master_data.csv):
 [Press Enter]
+
 
 4. Run HYBRIDJOIN Near-Real-Time ETL
 After master data is loaded, run the HYBRIDJOIN ETL script:
@@ -190,22 +193,6 @@ What This Script Does
 
 ---
 
-## Project Structure
-
-Near-Real-Time-Data-Warehouse-Using-HybridJoin/
-│
-├── Create-DW.sql        # Star schema and date dimension
-├── OLAP-Queries.sql    # Analytical queries
-├── Load-Master-Data.py     # Loads dimension tables
-├── Hybrid-Join.py          # Near-real-time ETL using HYBRIDJOIN
-├── transactional_data.csv
-├── customer_master_data.csv
-└── product_master_data.csv
-├── requirements.txt
-└── README.md
-
----
-
 ##  How HYBRIDJOIN Is Used
 HYBRIDJOIN is a stream–relation join algorithm designed for scenarios where:
 
@@ -228,12 +215,12 @@ This project implements a practical adaptation of HYBRIDJOIN, preserving its cor
 
 ## OLAP & Analytics
 The Data Warehouse supports complex analytical queries, including:
-•	Drill-down and roll-up analysis
-•	Revenue and growth trends
-•	Customer behavior analysi
-•	Product and store performance ranking
-•	Window-function-based insights
-•	View-based BI reporting
+- Drill-down and roll-up analysis
+- Revenue and growth trends
+- Customer behavior analysi
+- Product and store performance ranking
+- Window-function-based insights
+- View-based BI reporting
 
 These queries convert raw transactional data into actionable business intelligence.
 
