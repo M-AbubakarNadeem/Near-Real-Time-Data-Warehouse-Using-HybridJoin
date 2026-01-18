@@ -29,10 +29,10 @@
 Modern retail organizations such as Walmart generate **continuous streams of transactional data** from online platforms and physical stores. While this data is valuable, it is **not immediately useful for analysis** because it lacks contextual information such as customer demographics, product details, and store metadata.
 
 This project implements a **Near-Real-Time Data Warehouse** that:
-•	Continuously ingests transactional data
-•	Enriches it using customer and product master data
-•	Loads the enriched data into a star-schema data warehouse
-•	Enables advanced analytical (OLAP) queries for business intelligence
+- Continuously ingests transactional data
+- Enriches it using customer and product master data
+- Loads the enriched data into a star-schema data warehouse
+- Enables advanced analytical (OLAP) queries for business intelligence
 
 The system is inspired by the **HYBRIDJOIN algorithm**, which is specifically designed for efficiently joining fast data streams with large disk-based relations.
 
@@ -43,23 +43,23 @@ The system is inspired by the **HYBRIDJOIN algorithm**, which is specifically de
 ### The Problem
 
 Traditional ETL systems work in **batch mode**:
-•	Data is collected over long periods
-•	Processing happens at scheduled intervals
-•	Analytics are delayed
+- Data is collected over long periods
+- Processing happens at scheduled interval
+- Analytics are delayed
 
 This delay prevents organizations from reacting quickly to changing business conditions.
 
 ### Why HYBRIDJOIN?
 
-•	Transactional data arrives as a **stream**
-•	Master data is **large and disk-resident**
-•	Loading all master data into memory is inefficient
-•	Naive joins do not scale for real-time analytics
+- Transactional data arrives as a **stream**
+- Master data is **large and disk-resident**
+- Loading all master data into memory is inefficien
+- Naive joins do not scale for real-time analytics
 
 HYBRIDJOIN solves this by:
-•	Incrementally processing streaming data
-•	Efficiently accessing only required master data
-•	Producing joined results continuously
+- Incrementally processing streaming data
+- Efficiently accessing only required master dat
+- Producing joined results continuously
 
 This enables **near-real-time decision-making**.
 
@@ -67,35 +67,35 @@ This enables **near-real-time decision-making**.
 
 ## Features
 
-•	Near-real-time ETL pipeline
-•	Continuous processing of transactional data
-•	Stream–relation join using HYBRIDJOIN principles
-•	Star-schema data warehouse design
-•	Advanced OLAP queries
-•	Multithreaded processing for real-time simulation
-•	Optimized relational storage for analytics
+- Near-real-time ETL pipelin
+- Continuous processing of transactional data
+- Stream–relation join using HYBRIDJOIN principles
+- Star-schema data warehouse design
+- Advanced OLAP queries
+- Multithreaded processing for real-time simulation
+- Optimized relational storage for analytics
 
 ---
 
 ## Tech Stack
 
 ### Database
-•	MySQL 8.0
+= MySQL 8.0
 
 ### Programming Language
-•	Python 3.x
+- Python 3.x
 
 ### Python Libraries
-•	`pandas` – data manipulation
-•	`mysql-connector-python` – database connectivity
+- `pandas` – data manipulation
+- `mysql-connector-python` – database connectivity
 
 ### ETL Algorithm
-•	**HYBRIDJOIN**
+- **HYBRIDJOIN**
 
 ### Tools & Environment
-•	MySQL Workbench
-•	VS Code / Terminal
-•	Windows Command Prompt
+- MySQL Workbench
+- VS Code / Terminal
+- Windows Command Prompt
 
 ---
 
