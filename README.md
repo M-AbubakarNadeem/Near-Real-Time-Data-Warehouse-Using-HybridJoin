@@ -140,7 +140,7 @@ cd C:\Users\YourName\walmart-dw-project
 - Enter host:
 whatever your host name is
 
-  Enter database name:
+- Enter database name:
 [Press Enter]
 
 - Enter username:
@@ -155,34 +155,25 @@ username
 - Enter product CSV file path (default: product_master_data.csv):
 [Press Enter]
 
-What This Script Does
-
-•	Connects to the MySQL database
-•	Loads 5,891 customer records into dim_customer
-•	Loads 3,631 product records into dim_product
-•	Loads 8 store records into dim_store
-•	Loads 7 supplier records into dim_supplier
-•	Clears existing data safely before loading (TRUNCATE-based)
-
 4. Run HYBRIDJOIN Near-Real-Time ETL
 After master data is loaded, run the HYBRIDJOIN ETL script:
 
-python Hybrid-Join.py
+- python Hybrid-Join.py
 
-Enter Database Credentials When Prompted
-Enter host:
-whatever your host name is
+- Enter Database Credentials When Prompted
+- Enter host:
+  whatever your host name is
 
-Enter database name:
+- Enter database name:
 [Press Enter]
 
-Enter username:
+- Enter username:
 username
 
-Enter password:
+- Enter password:
 [Enter your MySQL password]
 
-Enter transactional data CSV file (default: transactional_data.csv):
+- Enter transactional data CSV file (default: transactional_data.csv):
 [Press Enter]
 
 What This Script Does
