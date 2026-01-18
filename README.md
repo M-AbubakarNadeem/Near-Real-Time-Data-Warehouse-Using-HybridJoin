@@ -11,16 +11,16 @@
 ---
 
 ## Table of Contents
-•	[About](#about)
-•	[Why This Project Matters](#why-this-project-matters)
-•	[Features](#features)
-•	[Tech Stack](#tech-stack)
-•	[Installation](#installation)
-•	[Project Structure](#project-structure)
-•	[How HYBRIDJOIN Is Used](#how-hybridjoin-is-used)
-•	[OLAP & Analytics](#olap--analytics)
-•	[How to Run the Project](#how-to-run-the-project)
-•	[Author](#author)
+- [About](#about)
+- [Why This Project Matters](#why-this-project-matters)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [How HYBRIDJOIN Is Used](#how-hybridjoin-is-used)
+- [OLAP & Analytics](#olap--analytics)
+- [How to Run the Project](#how-to-run-the-project)
+- [Author](#author)
 
 ---
 
@@ -206,14 +206,11 @@ Near-Real-Time-Data-Warehouse-Using-HybridJoin/
 │
 ├── Create-DW.sql        # Star schema and date dimension
 ├── OLAP-Queries.sql    # Analytical queries
-│
 ├── Load-Master-Data.py     # Loads dimension tables
 ├── Hybrid-Join.py          # Near-real-time ETL using HYBRIDJOIN
-│
 ├── transactional_data.csv
 ├── customer_master_data.csv
 └── product_master_data.csv
-│
 ├── requirements.txt
 └── README.md
 
