@@ -234,6 +234,6 @@ These queries convert raw transactional data into actionable business intelligen
 
 ---
 
-Author
+Author:
 Muhammad Abubakar Nadeem
-abubakarnadeen01234@gmail.com
+(abubakarnadeen01234@gmail.com)
